@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.805">
+    <testcase classname="As a provider I want to be able to access blogs via API connection." name="Verify that a GET request to /api/blogs with an invalid API key returns status code 401 and response_message" time="6.221">
+        <system-out><![CDATA[* The api user constructs the base url with the "invalid" token.............passed
+* The api user sets "api/blogs" path parameters.............................passed
+* The api user sends a GET request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized..passed
+]]></system-out>
+    </testcase>
+</testsuite>

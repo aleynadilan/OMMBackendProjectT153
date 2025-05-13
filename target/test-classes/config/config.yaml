@@ -1,0 +1,13 @@
+api:
+  base_url: "https://qa.onlinemastermarket.com"
+  providerEmail : "info@team1.com"
+  providerPassword : "Urban.123"
+  unauthorizedExceptionMessage: "status code: 401, reason phrase: Unauthorized"
+  invalidApiKey: "invalid"
+
+database:
+  host: "localhost"
+  port: 3306
+  URL:
+  USERNAME:
+  PASSWORD:
