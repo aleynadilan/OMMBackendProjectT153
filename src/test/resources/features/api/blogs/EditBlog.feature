@@ -6,7 +6,7 @@ Feature: As a provider, I want to be able to update the information of the blog 
 
     * The api user constructs the base url with the "provider" token.
     # Api kullanicisi "provider" token ile base urli olusturur
-    * The api user sets "api/editBlog/85" path parameters.
+    * The api user sets "api/editBlog/91" path parameters.
     # Api kullanicisi "api/editBlog" path parametrelerini olusturur
     * The api user prepares a patch request body to send to the api editBlog endpoint
     # Api kullanicisi api editBlog endpointine gondermek icin bir patch request body hazirlar
@@ -68,7 +68,7 @@ Feature: As a provider, I want to be able to update the information of the blog 
     * The api user verifies that the status code is 203.
     # Api kullanicisi status codeun 203 oldugunu dogrular
     * The api user verifies that the "response.response_message" information in the response body is "No Results found for the given ID".
-    # Api kullanicisi response bodydeki response_message bilgisinin "No Results found for the given IDg" oldugunu dogrular
+    # Api kullanicisi response bodydeki response_message bilgisinin "No Results found for the given ID" oldugunu dogrular
 
 
   Scenario: Verify that a PATCH request to /api/editBlog/{id} with an invalid API key, correct id, and valid data
@@ -76,18 +76,20 @@ Feature: As a provider, I want to be able to update the information of the blog 
 
     * The api user constructs the base url with the "invalid" token.
     # Api kullanicisi "invalid" token ile base urli olusturur
-    * The api user sets "api/editBlog/85" path parameters.
+    * The api user sets "api/editBlog/91" path parameters.
     # Api kullanicisi "api/editBlog" path parametrelerini olusturur
     * The api user prepares a patch request body to send to the api editBlog endpoint
     # Api kullanicisi api editBlog endpointine gondermek icin bir patch request body hazirlar
-    * The api user sends a PATCH request and saves the returned response.
-    # Api kullanicisi PATCH request gonderir ve donen responsei kaydeder
-    * The api user verifies that the status code is 401.
-    # Api kullanicisi status codeun 401 oldugunu dogrular
-    * The api user verifies that the "response.response_message" information in the response body is "Invalid token or token missing".
-    # Api kullanicisi response bodydeki response_message bilgisinin "Invalid token or token missing" oldugunu dogrular
 
-    #* The api user sends a PATCH request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized.
+    #* The api user sends a PATCH request and saves the returned response.
+    ## Api kullanicisi PATCH request gonderir ve donen responsei kaydeder
+    #* The api user verifies that the status code is 401.
+    ## Api kullanicisi status codeun 401 oldugunu dogrular
+    #* The api user verifies that the "response.response_message" information in the response body is "Invalid token or token missing".
+    ## Api kullanicisi response bodydeki response_message bilgisinin "Invalid token or token missing" oldugunu dogrular
+
+
+    * The api user sends a PATCH request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized.
     # Api kullanicisi PATCH request gonderir, donen responsei kaydeder, status codeun '401' ve reason phrase bilgisinin Unauthorized oldugunu dogrular
 
 
@@ -105,4 +107,4 @@ Feature: As a provider, I want to be able to update the information of the blog 
 
     Examples:
       | id |
-      | 85 |
+      | 91 |

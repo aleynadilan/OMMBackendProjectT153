@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class TestData{
     HashMap<String, Object> requestBody;
 
-    public HashMap BlogEditRequestBody() {
+    public HashMap blogEditRequestBody() {
 
         requestBody = new HashMap<>();
 

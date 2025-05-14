@@ -6,7 +6,7 @@ Feature: As a provider, I want to be able to delete blog information with the sp
 
     * The api user constructs the base url with the "provider" token.
     # Api kullanicisi "provider" token ile base urli olusturur
-    * The api user sets "api/deleteBlog/85" path parameters.
+    * The api user sets "api/deleteBlog/93" path parameters.
     # Api kullanicisi "api/deleteBlog" path parametrelerini olusturur
     * The api user sends a DELETE request and saves the returned response.
     # Api kullanicisi DELETE request gonderir ve donen responsei kaydeder
@@ -65,13 +65,13 @@ Feature: As a provider, I want to be able to delete blog information with the sp
     #* The api user sends a DELETE request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized.
     # Api kullanicisi DELETE request gonderir, donen responsei kaydeder, status codeun '401' ve reason phrase bilgisinin Unauthorized oldugunu dogrular
 
-
+  @API
   Scenario: Verify that the deleted blog is successfully removed via API by sending a GET request to /api/blog/{id}
   using the deleted_blog_id returned in the DELETE response.
 
     * The api user constructs the base url with the "provider" token.
     # Api kullanicisi "provider" token ile base urli olusturur
-    * The api user sets "api/blog/85" path parameters.
+    * The api user sets "api/blog/93" path parameters.
     # Api kullanicisi "api/blogs" path parametrelerini olusturur
     * The api user sends a GET request and saves the returned response.
     # Api kullanicisi GET request gonderir ve donen responsei kaydeder

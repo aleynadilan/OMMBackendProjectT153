@@ -59,12 +59,13 @@ Feature: As a provider, I should be able to access the detailed information of t
     # Api kullanicisi "invalid" token ile base urli olusturur
     * The api user sets "api/blog/2" path parameters.
     # Api kullanicisi "api/blogs" path parametrelerini olusturur
-    * The api user sends a GET request and saves the returned response.
-    # Api kullanicisi GET request gonderir ve donen responsei kaydeder
-    * The api user verifies that the status code is 401.
-    # Api kullanicisi status codeun 401 oldugunu dogrular
-    * The api user verifies that the "response.response_message" information in the response body is "Invalid token or token missing".
-    # Api kullanicisi response bodydeki response_message bilgisinin "Invalid token or token missing" oldugunu dogrular
 
-    #* The api user sends a GET request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized.
+   # * The api user sends a GET request and saves the returned response.
+   # # Api kullanicisi GET request gonderir ve donen responsei kaydeder
+   # * The api user verifies that the status code is 401.
+   # # Api kullanicisi status codeun 401 oldugunu dogrular
+   # * The api user verifies that the "response.response_message" information in the response body is "Invalid token or token missing".
+   # # Api kullanicisi response bodydeki response_message bilgisinin "Invalid token or token missing" oldugunu dogrular
+
+    * The api user sends a GET request, saves the returned response, and verifies that the status code is '401' with the reason phrase Unauthorized.
     # Api kullanicisi GET request gonderir, donen responsei kaydeder, status codeun '401' ve reason phrase bilgisinin Unauthorized oldugunu dogrular

@@ -6,7 +6,7 @@ Feature: As a provider, I want to be able to delete blog information with the sp
 
     * The api user constructs the base url with the "provider" token.
     # Api kullanicisi "provider" token ile base urli olusturur
-    * The api user sets "api/deleteBlog/85" path parameters.
+    * The api user sets "api/deleteBlog/93" path parameters.
     # Api kullanicisi "api/deleteBlog" path parametrelerini olusturur
     * The api user sends a DELETE request and saves the returned response.
     # Api kullanicisi DELETE request gonderir ve donen responsei kaydeder
@@ -71,7 +71,7 @@ Feature: As a provider, I want to be able to delete blog information with the sp
 
     * The api user constructs the base url with the "provider" token.
     # Api kullanicisi "provider" token ile base urli olusturur
-    * The api user sets "api/blog/85" path parameters.
+    * The api user sets "api/blog/93" path parameters.
     # Api kullanicisi "api/blogs" path parametrelerini olusturur
     * The api user sends a GET request and saves the returned response.
     # Api kullanicisi GET request gonderir ve donen responsei kaydeder

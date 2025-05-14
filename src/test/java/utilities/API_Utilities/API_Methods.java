@@ -17,7 +17,7 @@ public class API_Methods {
     public static void pathParam(String rawPaths) {  //    api/blogs
         String[] paths = rawPaths.split("/");  //  [api, blogs]
 
-        System.out.println(Arrays.toString(paths));  //  [api, blogs]
+        System.out.println(Arrays.toString(paths));  //  [api, blog, 2]
 
         StringBuilder tempPath = new StringBuilder("/{");  // /{pp0}/{pp1}
 
